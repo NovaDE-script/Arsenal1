@@ -6,7 +6,7 @@ local __PELINDA_SILENTMODE__ = true
 local __PELINDA_SECURITY_LEVEL__ = 2 -- 1 = Warnung, 2 = Kick, 3 = Crash
 
 -- 🔑 Key-Link generieren
-local keyLink = Pelinda.GetKeyLink({ Service = __PELINDA_SERVICE__ })
+local keyLink = Pelinda.GetKeyLink({ Service = NeoBLox Hub DE })
 print("🔑 Hol dir deinen Key hier: " .. keyLink)
 setclipboard(keyLink)
 print("📋 Link wurde in die Zwischenablage kopiert!")
@@ -46,3 +46,4 @@ TextBox.FocusLost:Connect(function()
         TextBox.Text = "Ungültiger Key. Bitte erneut versuchen."
     end
 end)
+
